@@ -2,9 +2,12 @@
   "name": "basic-ci-cd",
   "version": "1.0.0",
   "main": "index.js",
+  
   "scripts": {
-"test": "echo 'All tests passed!'"
-  },
+    "test": "echo \"No tests specified\" && exit 0"
+  }
+}
+
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -12,4 +15,4 @@
   "dependencies": {
     "express": "^5.1.0"
   }
-}
+
