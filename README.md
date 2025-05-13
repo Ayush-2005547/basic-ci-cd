@@ -22,9 +22,13 @@ The project includes:
 
 basic-ci-cd/
 ├── .github/workflows/main.yml # CI/CD workflow definition
+
 ├── Dockerfile # Docker image build configuration
+
 ├── index.js # Entry point of the Node.js app
+
 ├── package.json # Project metadata and dependencies
+
 └── README.md # Project documentation
 
 
