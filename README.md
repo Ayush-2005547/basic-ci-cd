@@ -1,6 +1,7 @@
 # Basic CI/CD Pipeline with GitHub Actions and Docker
 
-This repository demonstrates a complete CI/CD pipeline for a simple Node.js application using GitHub Actions and Docker. It is designed to automatically build, test, and deploy the application on every push to the `main` branch.
+This project demonstrates a basic CI/CD pipeline using **GitHub Actions** to build and push a Dockerized Node.js app to **Docker Hub**.
+
 
 ## Overview
 
@@ -32,21 +33,25 @@ basic-ci-cd/
 └── README.md # Project documentation
 
 
-## CI/CD Workflow
 
-The GitHub Actions workflow is triggered on every push to the `main` branch. The steps include:
+##  GitHub Actions Workflow
 
-1. Checkout code from the repository
-2. Set up Node.js environment
-3. Install dependencies using `npm`
-4. Run a basic test script
-5. Build a Docker image of the application
-6. Push the Docker image to DockerHub
+The GitHub Actions pipeline:
 
-## Secrets Configuration
+1. Checks out the code.
+2. Logs into Docker Hub using secrets.
+3. Builds the Docker image.
+4. Pushes the image to your Docker Hub account.
 
-To enable secure authentication with DockerHub, the following GitHub repository secrets were used:
+###  Secrets Required
 
-- `DOCKERHUB_USERNAME` — DockerHub username
-- `DOCKERHUB_TOKEN` — DockerHub access token (generated under DockerHub security settings)
+Make sure to add these secrets to your GitHub repository:
+- `DOCKER_USERNAME`
+- `DOCKER_TOKEN` (Personal Access Token from Docker Hub)
+
+##  Docker Image
+
+The image is automatically pushed to Docker Hub after every push to `main`.
+
+➡️ [View on Docker Hub](https://hub.docker.com/repository/docker/ayush497/basic-ci-cd)
 
