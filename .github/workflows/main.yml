@@ -33,3 +33,4 @@ jobs:
 
       - name: Push Docker image
         run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/basic-ci-cd:latest
+#Just checking if the code is working
